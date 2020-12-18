@@ -1,4 +1,4 @@
-#! /usr/bin/python3
+#!/usr/bin/python3
  
 # The random package is needed to choose a random number
 import random
@@ -27,6 +27,7 @@ def guess_loop():
             else:
                 # The user found the number to guess, let's exit
                 print("You just found the number, it was indeed", guess)
+                print("Congratulations", name)
                 return
         # A ValueError is raised by the int() function if the user inputs something else than a number
         except ValueError as err:
